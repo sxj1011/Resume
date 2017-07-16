@@ -1,0 +1,223 @@
+body{
+    background: #e0e0e0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*reset*/
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+address{
+    margin-bottom: 0;
+}
+.h4, h4{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+.container{
+    margin-top: 20px;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #444;
+    overflow: hidden;
+}
+
+.header{
+    background:#333333;
+    padding: 30px 50px;
+    color:#ffffff;
+}
+.header .name h1{
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 5px;
+    line-height: 80px;
+}
+.header .name small{
+    padding-left: 0.4em;
+    letter-spacing: 0;
+}
+.header .job h3{
+    margin: 0;
+    line-height: 80px;
+    text-align: right;
+}
+.header .row-top{
+    border-bottom: 2px solid rgba(1,1,1,0.3);
+    margin-bottom: 10px;
+}
+.header .contact ul{
+    margin: 0;
+    padding-top: 10px;
+}
+.header .contact li{
+    height: 22px;
+}
+.header .contact a{
+    color:#ffffff;
+}
+.header .contact a:hover{
+    text-decoration:none;
+    color:#F0E68C;
+}
+.header .contact .fa{
+    margin-left: 5px;
+}
+
+/* content */
+.font-color{
+    color: #008080;
+}
+.content{
+    padding: 30px 45px;
+    background-color: #fff;
+}
+.section{
+    margin-bottom: 20px;
+}
+.section-head{
+    margin-bottom: 15px;
+}
+.content .head-font{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: #333;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    font-size: 26px;
+    vertical-align: top;
+}
+.content .head-text{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.content .head-text small{
+    color: #008080;
+}
+.content .section .last:after{
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #333;
+    position: absolute;
+    left: -9px;
+    bottom: 0px;
+}
+.item{
+    margin-left: 24px;
+    padding-top: 20px;
+    border-left: 4px solid #333;
+    margin-top: -25px;
+    position: relative;
+}
+.item .item-head-font{
+    position: absolute;
+    top: 0;
+    left: -17px;
+    width: 30px;
+    height: 30px;
+    background: #008080;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+.item ul{
+    padding: 20px;
+}
+.item li:first-child{
+    margin-left: -20px;
+}
+.item .pos{
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.item li:first-child h4{
+    position: relative;
+    background: #333;
+    color: #fff;
+    margin: 0 0 15px 0;
+    line-height: 30px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.item .item-content-font{
+    margin-right: 6px;
+}
+
+.right, .left{
+    padding-left: 0;
+}
+
+.right .item .demo{
+    background: #fff;
+    border-radius: 5px;
+    float: right;
+    margin: 5px 0;
+    height: 20px;
+    line-height: 20px;
+}
+.right .item .demo a{
+    color: #333;
+    float: right;
+}
+.right .item .demo a:hover{
+    text-decoration: none;
+    color: #008080;
+    cursor: pointer;
+}
+.right .item .item-head-title{
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 992px){
+    .header .name, .header .job h3{
+        text-align: center;
+    }
+    .header .name small{
+        display: block;
+        font-size: 50%;
+    } 
+   .header .info, .header .contact ul{
+       text-align: center;
+   }
+    .header .contact li{
+        display: inline-block;
+    }
+    .header .job h3{
+        line-height: 40px;
+        font-size: 20px; 
+    }
+    .header .name h1{
+       letter-spacing: 0;
+       line-height: 50px;
+       font-size: 40px;   
+    }
+    .header{
+        padding: 20px;
+    }
+    .item .date{
+        float: right;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .container{
+        margin-top: 0;
+    }
+}
